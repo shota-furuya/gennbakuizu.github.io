@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>原爆イズ</title>
+    <style>
+        .square_btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            background: #668ad8; /*ボタン色*/
+            color: #FFF;
+            border-bottom: solid 4px #627295;
+            border-radius: 3px;
+        }
+
+            .square_btn:active { /*ボタンを押したとき*/
+                -ms-transform: translateY(4px);
+                -webkit-transform: translateY(4px);
+                transform: translateY(4px); /*下に動く*/
+                box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); /*影を小さく*/
+                border-bottom: none;
+            }
+    </style>
+    <script type="text/javascript">
+        var x = 0;
+        function anser(num) {
+            x = x + 1;
+            if (x == 1) {
+                if (document.getElementById) {
+                    if (num == 0) {
+                        document.getElementById("answer").innerHTML = "<h2><font color='blue'>不正解</font></h2>";
+                        document.getElementById("button1").disabled = "";
+                    }
+                    else {
+                        document.getElementById("answer").innerHTML = "<h2><font color='red'>正解</font></h2>";
+                        document.getElementById("button1").disabled = "";
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h2>
+            <font size="7">問題３</font><br />
+            1945年に原爆が落ちた場所は？<br />
+            <br />
+            <a href="#" class="square_btn" onclick="anser(1)">【①広島＆長崎】</a><br /><br />
+            <a href="#" class="square_btn" onclick="anser(0)">【②鹿児島＆埼玉】</a><br /><br />
+            <a href="#" class="square_btn" onclick="anser(0)">【③マドリード＆アテネ】</a><br /><br />
+            解答<br /></h2>
+        <div id="answer"></div><br /><br /><br />
+        <input type="button" value="次へ" onclick="location.href = 'file:///Z:/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E9%83%A8/%E2%98%86%E4%B8%AD%E5%AD%A6%EF%BC%99%E6%9C%9F%E7%94%9F/%E5%8F%A4%E8%B0%B7/HTML/%E6%96%87%E5%8C%96%E7%A5%AD%E5%8E%9F%E7%88%86%E7%8F%AD/%E5%8E%9F%E3%81%B0%E3%82%AF%E3%82%A4%E3%82%BA6.html'" id="button1" disabled><br />
+
+
+    </center>
+</body>
+</html>
