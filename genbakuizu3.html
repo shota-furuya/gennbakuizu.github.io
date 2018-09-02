@@ -20,6 +20,22 @@
                 border-bottom: none;
             }
 
+			.square_bto{
+    display: inline-block;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
     </style>
     <script type="text/javascript">
         var q = 0;
@@ -54,7 +70,8 @@
         解答<br /></h2>
         <div id="1"></div><br /><br /><br />
 
-        <input type="button" value="次へ" onclick="location.href = 'genbakuizu4.html'" id="button1" disabled><br />
+		<a href="#" class="square_bto" onclick="location.href = 'genbakuizu4.html'" id="button1" disabled>次へ</a>
+        <br />
      </font>   
     </center>	
 </body>
