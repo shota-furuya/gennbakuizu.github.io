@@ -20,6 +20,10 @@
                 border-bottom: none;
             }
 
+			.square_btn:hover {
+    background: #cc0000;
+}
+
 			.square_bto{
     display: inline-block;
     padding: 7px 20px;
@@ -29,9 +33,10 @@
     background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
     background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
     transition: .4s;
+
 }
 
-.square_btn:hover {
+.square_bto:hover {
     background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
     background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
 }
@@ -45,11 +50,11 @@
                 if (document.getElementById) {
                     if (num == 0) {
                         document.getElementById("1").innerHTML = "<h2><font color='blue'>不正解</font></h2>";
-                        document.getElementById("button1").disabled = "";
+                        document.getElementById("button1").innerHTML = "<a href='#' class='square_bto' style='pointer-events: auto;' onclick='location.href = 'genbakuizu4.html'' id='button1'>次へ</a>";
                     }
                     else {
                         document.getElementById("1").innerHTML = "<h2><font color='red'>正解</font></h2>";
-                        document.getElementById("button1").disabled = "";
+                        document.getElementById("button1").innerHTML = "<a href='#' class='square_bto' style='pointer-events: auto;' onclick='location.href = 'genbakuizu4.html'' id='button1'>次へ</a>";
                     }
                 }
             }
@@ -70,8 +75,8 @@
         解答<br /></h2>
         <div id="1"></div><br /><br /><br />
 
-		<a href="#" class="square_bto" onclick="location.href = 'genbakuizu4.html'" id="button1" disabled>次へ</a>
-        <br />
+		<a href="#" class="square_bto" style="pointer-events: none;" onclick="location.href = 'genbakuizu4.html'" id="button1">次へ</a><br>
+		<br />
      </font>   
     </center>	
 </body>
