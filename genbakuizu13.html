@@ -33,27 +33,25 @@
     background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
     background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
     transition: .4s;
-
 }
 
 .square_bto:hover {
     background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
     background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
 }
-
     </style>
     <script type="text/javascript">
-        var q = 0;
-        function abc(num) {
-            q = q+1;
-            if (q == 1) {
+        var x = 0;
+        function anser(num) {
+            x = x + 1;
+            if (x == 1) {
                 if (document.getElementById) {
                     if (num == 0) {
-                        document.getElementById("1").innerHTML = "<h2><font color='blue'>不正解</font></h2>";
+                        document.getElementById("answer").innerHTML = "<h2><font color='blue'>不正解</font></h2>";
                         document.getElementById("button1").innerHTML = "<a href='#' class='square_bto' style='pointer-events: auto;' onclick='location.href = 'genbakuizu4.html'' id='button1'>次へ</a>";
                     }
                     else {
-                        document.getElementById("1").innerHTML = "<h2><font color='red'>正解</font></h2>";
+                        document.getElementById("answer").innerHTML = "<h2><font color='red'>正解</font></h2>";
                         document.getElementById("button1").innerHTML = "<a href='#' class='square_bto' style='pointer-events: auto;' onclick='location.href = 'genbakuizu4.html'' id='button1'>次へ</a>";
                     }
                 }
@@ -65,19 +63,18 @@
     <center>
 	<font style="font-size: 30px;">
         <h2>
-            <!ここから、１問目>
-            <font size="7">問題４</font><br />
-        プルトニウムは何の原子より重いか？<br />
-        <br />
-            <a href="#" class="square_btn" onclick="abc(0)">【①イラン】</a><br /><br />
-            <a href="#" class="square_btn" onclick="abc(1)">【②ウラン】</a><br /><br />
-            <a href="#" class="square_btn" onclick="abc(0)">【③知らん】</a><br /><br />
-        解答<br /></h2>
-        <div id="1"></div><br /><br /><br />
+            <font size="7">問題９</font><br />
+            リトルボーイなどの約1000倍あると言われている史上最大の原爆は？<br />
+            <br />
+            <a href="#" class="square_btn" onclick="anser(0)">【①チャーリー・ブラウン】</a><br /><br />
+            <a href="#" class="square_btn" onclick="anser(0)">【②チェリー・ボム】</a><br /><br />
+            <a href="#" class="square_btn" onclick="anser(0)">【③ツアー・ボート】</a><br /><br />
+			<a href="#" class="square_btn" onclick="anser(1)">【④ツァーリ・ボンバ】</a><br /><br />
+			<a href="#" class="square_btn" onclick="anser(0)">【⑤ソーリー・ボブ】</a><br /><br />
+            解答<br /></h2>
+        <div id="answer"></div><br /><br /><br />
 
-		<a href="#" class="square_bto" style="pointer-events: none;" onclick="location.href = 'genbakuizu7.html'" id="button1">次へ</a><br>
-		<br />
-     </font>   
-    </center>	
+		</font>
+    </center>
 </body>
 </html>
